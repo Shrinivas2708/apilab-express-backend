@@ -7,7 +7,6 @@ import { authMiddleware, AuthRequest } from "../middleware/auth";
 
 const router = Router();
 
-// POST /api/auth/signin
 router.post("/signin", async (req: Request, res: Response) => {
   try {
     await connectDB();
